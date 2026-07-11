@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayoub Abdoun — Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer in Doha, Qatar building fintech and AI-powered products with Next.js, Flutter, GCP, and Supabase.">
+  <meta property="og:title" content="Ayoub Abdoun — Full-Stack Developer">
+  <meta property="og:description" content="Full-stack developer building fintech and AI-powered products.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ayoubabdoun.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__logo" href="#hero">AA<span class="nav__logo-dot">.</span></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <p class="hero__kicker">Doha, Qatar</p>
+      <h1 class="hero__title">Ayoub<br><span class="hero__title-gradient">Abdoun</span></h1>
+      <p class="hero__tagline">Full-stack developer building <strong>fintech</strong> and <strong>AI-powered</strong> products — from Next.js web apps to Flutter mobile and GCP cloud infrastructure.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--primary" href="#projects">View work</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="section-title" data-reveal><span class="section-title__num">01</span> About</h2>
+      <div class="about__inner">
+        <div class="about__bio" data-reveal>
+          <p>I'm a Computer Science student at <strong>Qatar University</strong> (B.Sc., 2022–2026) and a full-stack engineer working across web, mobile, and cloud. I'm currently building a fintech platform at <strong>Finspire</strong> (QSTP, Doha) — payments, subscriptions, and AI-driven features on Google Cloud.</p>
+          <p>I like shipping complete products: designing the data model, wiring up the backend, and polishing the UI until it feels right.</p>
+        </div>
+        <div class="skills" data-reveal>
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul class="tags"><li>JavaScript / TypeScript</li><li>Python</li><li>Dart</li><li>SQL (Postgres, MySQL)</li><li>HTML / CSS</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks</h3>
+            <ul class="tags"><li>Next.js</li><li>React</li><li>Node.js</li><li>Flutter</li><li>FastAPI</li><li>Blockly</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; Cloud</h3>
+            <ul class="tags"><li>GCP (Cloud Run, Cloud SQL)</li><li>Supabase</li><li>Firebase</li><li>Prisma</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; AI</h3>
+            <ul class="tags"><li>OpenAI API</li><li>Gemini API</li><li>Git</li><li>Celery / Redis</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="section-title" data-reveal><span class="section-title__num">02</span> Projects</h2>
+      <div class="project-grid">
+        <article class="project-card project-card--featured" data-reveal>
+          <p class="project-card__label">Featured</p>
+          <h3>Brick2Script</h3>
+          <p>AI-powered coding education platform I lead: in-browser Python execution (Pyodide Web Worker), dual Blockly/Monaco editors, OpenAI-graded submissions against structured test cases, contextual AI hints, and a gamified progression system on a Celery + Redis async pipeline.</p>
+          <ul class="project-card__tags"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>OpenAI</li><li>Celery</li></ul>
+        </article>
+        <article class="project-card" data-reveal>
+          <h3>Finspire</h3>
+          <p>Full-stack fintech platform: payment gateway integration with HMAC verification and webhooks, recurring subscription lifecycle, and GPT-based transaction categorization — deployed on GCP.</p>
+          <ul class="project-card__tags"><li>GCP</li><li>MySQL</li><li>Payments</li><li>OpenAI</li></ul>
+          <p class="project-card__links"><a href="https://finspireapp.com/" target="_blank" rel="noopener">finspireapp.com →</a></p>
+        </article>
+        <article class="project-card" data-reveal>
+          <h3>Makira Beauty</h3>
+          <p>Beauty-service booking app connecting clients with artists and providers. Bloc/Cubit state management, GetIt dependency injection, and Supabase real-time data.</p>
+          <ul class="project-card__tags"><li>Flutter</li><li>Supabase</li><li>Bloc</li></ul>
+        </article>
+        <article class="project-card" data-reveal>
+          <h3>974Hub Research Site</h3>
+          <p>Website and full admin dashboard (with auth) for a Qatar University research team to manage their own content.</p>
+          <ul class="project-card__tags"><li>Next.js</li><li>Supabase</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <h2 class="section-title" data-reveal><span class="section-title__num">03</span> Experience</h2>
+      <ol class="timeline">
+        <li class="timeline__item" data-reveal>
+          <p class="timeline__period">Oct 2025 — Present</p>
+          <h3>Fullstack Software Engineer Intern</h3>
+          <p class="timeline__org">Finspire · QSTP, Doha</p>
+          <ul>
+            <li>Built and deployed a full-stack fintech platform on GCP: Cloud Run hosting, Cloud SQL (MySQL), and Cloud Load Balancing.</li>
+            <li>Integrated a third-party payment gateway with HMAC signature verification, webhook handling, and the full recurring-payment lifecycle.</li>
+            <li>Built an OpenAI GPT integration for automated categorization from raw text.</li>
+          </ul>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <p class="timeline__period">Oct 2025 — Jan 2026</p>
+          <h3>Web Developer</h3>
+          <p class="timeline__org">974Hub · Qatar University, Doha</p>
+          <ul>
+            <li>Built a research-team website with Next.js and Supabase as the backend.</li>
+            <li>Developed a full admin dashboard with an authentication system for content management.</li>
+          </ul>
+        </li>
+        <li class="timeline__item" data-reveal>
+          <p class="timeline__period">Jun 2025 — Oct 2025</p>
+          <h3>Flutter Full-Stack Developer</h3>
+          <p class="timeline__org">Makira Beauty · Qatar</p>
+          <ul>
+            <li>Built a mobile booking app in Flutter connecting clients with beauty artists and providers.</li>
+            <li>Used Supabase for auth, database, and real-time data; Bloc/Cubit for state; GetIt for dependency injection.</li>
+          </ul>
+        </li>
+      </ol>
+      <div class="education" data-reveal>
+        <h3>Education</h3>
+        <p><strong>Qatar University</strong> — B.Sc. Computer Science, Aug 2022 – May 2026 · Doha, Qatar</p>
+      </div>
+      <p class="experience__cv" data-reveal><a class="btn btn--primary" href="assets/Ayoub-Abdoun-CV.pdf" download>Download CV</a></p>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <h2 class="footer__title">Let's build something<span class="footer__title-gradient"> together.</span></h2>
+    <ul class="footer__links">
+      <li><a href="mailto:ayoob988@gmail.com">ayoob988@gmail.com</a></li>
+      <li><a href="https://github.com/AyoubAbdoun" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/ayoub-abdoun-88514b315/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <p class="footer__note">© 2026 Ayoub Abdoun · Built with plain HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
