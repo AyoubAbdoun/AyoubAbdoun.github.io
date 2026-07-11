@@ -168,7 +168,7 @@ main > section, .footer {
 }
 
 /* ===== Scroll reveal ===== */
-[data-reveal] {
+.js [data-reveal] {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity .6s ease, transform .6s ease;

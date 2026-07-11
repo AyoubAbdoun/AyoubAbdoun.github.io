@@ -8,7 +8,14 @@ toggle.addEventListener("click", () => {
 });
 
 links.addEventListener("click", (e) => {
-  if (e.target.matches("a")) {
+  if (e.target.closest("a")) {
+    links.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && links.classList.contains("is-open")) {
     links.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
   }
