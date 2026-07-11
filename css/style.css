@@ -182,3 +182,92 @@ main > section, .footer {
   [data-reveal] { opacity: 1; transform: none; transition: none; }
   .btn, .nav__links a { transition: none; }
 }
+
+/* ===== About + skills ===== */
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+}
+.about__bio p + p { margin-top: 1rem; }
+.about__bio { color: var(--text-muted); font-size: 1.05rem; }
+.about__bio strong { color: var(--text); }
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+.skill-group h3 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color: var(--amber);
+  margin-bottom: .75rem;
+}
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.tags li, .project-card__tags li {
+  font-size: .8rem;
+  font-weight: 500;
+  padding: .3rem .75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(139, 92, 246, .4);
+  color: var(--text-muted);
+}
+
+/* ===== Projects ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.project-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(139, 92, 246, .18);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform .25s ease, border-color .25s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--pink);
+}
+.project-card--featured {
+  grid-column: 1 / -1;
+  background:
+    linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+    var(--gradient) border-box;
+  border: 2px solid transparent;
+}
+.project-card__label {
+  font-family: var(--font-display);
+  font-size: .75rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.project-card h3 { font-size: 1.5rem; }
+.project-card > p { color: var(--text-muted); }
+.project-card__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: auto;
+}
+.project-card__links a {
+  color: var(--pink);
+  font-weight: 600;
+  text-decoration: none;
+}
+.project-card__links a:hover { text-decoration: underline; }
